@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="row">
+      <div class="col-md-4"style="margin-bottom: 20px" *ngFor="let item of listResidences">
+        <div class="card" style="width: 18rem">
+          <img class="card-img-top" [src]="item.image" alt="no" />
+          <div class="card-body">
+            <h5 class="card-title">{{item.name}}</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
