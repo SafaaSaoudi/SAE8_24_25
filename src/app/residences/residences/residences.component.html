@@ -10,7 +10,7 @@
             <h5 class="card-title">{{item.name | uppercase}}</h5>
           </div>
           <div> <button class="btn btn-success" (click)="showLocation(item)">Show Location</button>
-            <button class="btn btn-success" [routerLink]="['rdetails', item.id]">Sow details</button>
+            <button class="btn btn-success" [routerLink]="['/rdetails', item.id]">Sow details</button>
           <span *ngIf="visbility && item.name===N">{{item.address}}</span>
           </div>
           <div [ngSwitch]="item.status">
